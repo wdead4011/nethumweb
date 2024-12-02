@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETHUM SADEW | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ceylon-blue': '#1E3A8A',
+                        'kandyan-red': '#DC2626',
+                        'tea-green': '#4CAF50',
+                        'spice-gold': '#D97706',
+                        'temple-stone': '#F3F4F6'
+                    },
+                    fontFamily: {
+                        'heading': ['Montserrat', 'sans-serif'],
+                        'body': ['Lato', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+        .ceylon-gradient {
+            background: linear-gradient(135deg, #1E3A8A 0%, #DC2626 100%);
+        }
+        .batik-pattern {
+            background-image: 
+                linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(0,0,0,0.1) 25%, transparent 25%);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-temple-stone text-gray-800 font-body">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-ceylon-blue text-white z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-heading font-bold">NETHUM SADEW</div>
+            <div class="space-x-6 font-heading">
+                <a href="#home" class="hover:text-spice-gold transition-colors">Home</a>
+                <a href="#about" class="hover:text-spice-gold transition-colors">About</a>
+                <a href="#skills" class="hover:text-spice-gold transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-spice-gold transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-spice-gold transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 ceylon-gradient text-white">
+        <div class="text-center">
+            <div class="w-48 h-48 mx-auto mb-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span class="text-6xl font-heading text-white">NS</span>
+            </div>
+            <h1 class="text-5xl font-heading font-bold mb-4">NETHUM SADEW</h1>
+            <p class="text-2xl mb-8">WEB MAKER</p>
+            <div class="space-x-4">
+                <button class="bg-kandyan-red text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all font-heading">
+                    Download CV
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-ceylon-blue transition-all font-heading">
+                   CONTACT Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white batik-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-heading text-center mb-12 text-ceylon-blue">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-xl leading-relaxed">
+                    Born in the pearl of the Indian Ocean, I blend traditional Sri Lankan creativity 
+                    with modern technological innovation. My journey is a tapestry of code, culture, 
+                    and continuous learning, weaving digital solutions that tell a story.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-temple-stone">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-heading text-center mb-12 text-ceylon-blue">Technology Palette</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-6xl mb-4 text-kandyan-red">🖥️</div>
+                    <h3 class="text-2xl font-heading mb-4">Web Crafting</h3>
+                    <p>Sculpting digital experiences with React, Vue, and modern web technologies</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-6xl mb-4 text-tea-green">🛠️</div>
+                    <h3 class="text-2xl font-heading mb-4">Backend Engineering</h3>
+                    <p>Building robust backend systems with Node.js, Python, and cloud architectures</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-6xl mb-4 text-spice-gold">📊</div>
+                    <h3 class="text-2xl font-heading mb-4">Data Insights</h3>
+                    <p>Transforming data into meaningful stories using advanced analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-heading text-center mb-12 text-ceylon-blue">Digital Creations</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-temple-stone p-6 rounded-lg shadow-md">
+                    <div class="h-48 bg-ceylon-blue rounded-t-lg flex items-center justify-center">
+                        <span class="text-white text-3xl font-heading">Project I</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading mb-4">Cultural Connect</h3>
+                        <p class="mb-4">A platform bridging Sri Lankan heritage with modern technology</p>
+                        <button class="bg-kandyan-red text-white px-6 py-3 rounded-full hover:opacity-90">
+                            Explore Project
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-temple-stone p-6 rounded-lg shadow-md">
+                    <div class="h-48 bg-ceylon-blue rounded-t-lg flex items-center justify-center">
+                        <span class="text-white text-3xl font-heading">Project II</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading mb-4">Eco-Tech Solution</h3>
+                        <p class="mb-4">Sustainable technology addressing environmental challenges</p>
+                        <button class="bg-tea-green text-white px-6 py-3 rounded-full hover:opacity-90">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-temple-stone p-6 rounded-lg shadow-md">
+                    <div class="h-48 bg-ceylon-blue rounded-t-lg flex items-center justify-center">
+                        <span class="text-white text-3xl font-heading">Project III</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading mb-4">Data Visualization</h3>
+                        <p class="mb-4">Interactive dashboards revealing complex data narratives</p>
+                        <button class="bg-spice-gold text-white px-6 py-3 rounded-full hover:opacity-90">
+                            Discover More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 ceylon-gradient">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-heading text-center mb-12 text-white">Connect with Me</h2>
+            <form class="max-w-xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+                <div class="mb-6">
+                    <label class="block text-ceylon-blue mb-2 font-heading" for="name">Your Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-3 border rounded-full focus:ring-2 focus:ring-ceylon-blue" placeholder="Enter your name">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-ceylon-blue mb-2 font-heading" for="email">Email Address</label>
+                    <input type="email" id="email" class="w-full px-4 py-3 border rounded-full focus:ring-2 focus:ring-ceylon-blue" placeholder="Enter your email">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-ceylon-blue mb-2 font-heading" for="message">Your Message</label>
+                    <textarea id="message" rows="4" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-ceylon-blue" placeholder="Write your message"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-kandyan-red text-white py-4 rounded-full hover:opacity-90 font-heading">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ceylon-blue text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="space-x-6 mb-4 font-heading">
+                <a href="#" class="hover:text-spice-gold">LinkedIn</a>
+                <a href="#" class="hover:text-spice-gold">GitHub</a>
+                <a href="#" class="hover:text-spice-gold">Twitter</a>
+            </div>
+            <p class="font-body">© 2024 Arjuna Wickramasinghe - Bridging Technology and Culture</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Your message has been sent! I will get back to you soon.');
+            } else {
+                alert('Please fill in all fields to send your message.');
+            }
+        });
+    </script>
+</body>
+</html>
